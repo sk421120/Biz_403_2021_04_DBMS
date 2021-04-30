@@ -1,5 +1,5 @@
 -- bookuser
- DROP TABLE tbl_books CASCADE CONSTRAINTS;
+-- DROP TABLE tbl_books CASCADE CONSTRAINTS;
 CREATE TABLE tbl_books (
     bk_isbn   CHAR(13) PRIMARY KEY,
     bk_title  NVARCHAR2(125) NOT NULL,
