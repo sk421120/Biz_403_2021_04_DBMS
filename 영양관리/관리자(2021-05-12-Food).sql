@@ -1,0 +1,9 @@
+-- 관리자
+CREATE TABLESPACE myFoodDB
+DATAFILE 'c:/oraclexe/data/myFoodDB.dbf'
+SIZE 1M AUTOEXTEND ON NEXT 1K;
+
+CREATE USER myfood IDENTIFIED BY myfood
+DEFAULT TABLESPACE myFoodDB;
+
+GRANT DBA TO myfood;
